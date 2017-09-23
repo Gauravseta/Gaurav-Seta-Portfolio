@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Gaurav Seta</title>
+	<link href="styles/profile-page.css" rel="stylesheet">
+    <script src="node_modules/angular/angular.min.js"></script>
+
+  </head>
+  	<body ng-app="mainApp" ng-controller="MainController">
+	<div class="profile-container">
+		<div class="left-section">
+			<div class="social-link-container">
+				<div class="opaque-divider"></div> 
+				<div class="social-link-body">
+					<img class="social-link-item facebook-link" src="images/facebook.svg"></img>
+					<img class="social-link-item twitter-link" src="images/facebook.svg"></img>
+					<img class="social-link-item googleplus-link" src="images/facebook.svg"></img>
+				</div>			
+			</div>
+			<div class="image-container">
+				<img class="profile-image" src="images/gaurav.jpg"></img>
+			</div>
+			<div class="name-container"><h1>GAURAV</h1><h1>SETA</h1>
+			</div>
+			<div class="horizontal-divider"></div>
+			<div class="developer-title"><h3>Front End</h3><h3>Developer</h3>
+			</div>
+			
+		</div>
+		<div class="right-section">
+			<div class="opaque-divider"></div>
+			<div class="menu-bar">
+				<a class="menu-item" href="">//Profile</a>
+				<a class="menu-item" href="">//Work</a>
+				<a class="menu-item" href="">//Resume</a>
+				<a class="menu-item" href="">//Blog</a>
+				<a class="menu-item" href="">//Contact</a>
+			</div>
+			<div class="profile-content">
+				<div class="text-profile"><h1>PROFILE</h1></div>
+				<div class="text-item-container">
+					<div class="title">Hello, I am <strong>GAURAV SETA</strong></div>
+					<div class="subtitle">Front End Developer</div>	
+					<div class="divider">
+					</div>	
+					<p>To prove my expertise in Front End development and show my interest in developing UI, following prototype has been developed(pure CSS3) and deployed on Heroku Cloud Platform.Above links demonstrate my knowledge on various Front End Concepts.Moreover, code of this prototype has also been uploaded to github.</p>		
+				</div>
+				<div class="text-item-container">
+					<div class="title">Personal Info</strong></div>
+					<div class="divider"></div>
+					<div class="personal-info-list">
+						<div class="personal-info-tags">
+							<div class="key">Name</div><div class="value">GAURAV SETA</div>
+						</div>
+						<div class="personal-info-tags">
+							<div class="key">Exp</div><div class="value">2 years</div>
+						</div>
+						<div class="personal-info-tags">
+							<div class="key">Email</div><div class="value">gauravseta@gmail.com</div>
+						</div>
+						<div class="personal-info-tags">
+							<div class="key">Address</div><div class="value">Mumbai,India</div>
+						</div>
+						<div class="personal-info-tags">
+							<div class="key">Phone</div><div class="value">8097699073</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	<div>
+	
+
+	<script>
+		angular.module('mainApp',[])
+		.controller('MainController',['$scope',function($scope){
+			$scope.heading="Gaurav Seta";
+
+		}]);
+	</script>
+  	</body>
+</html>
