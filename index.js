@@ -11,9 +11,4 @@ app.get('/',function(req,res){
 	res.sendFile(path.join(__dirname+'/index.html'));
 
 });
-
-app.get('/rough',function(req,res){
-	res.sendFile(path.join(__dirname+'/index1.html'));
-});
-
 app.listen(process.env.PORT||8080);
