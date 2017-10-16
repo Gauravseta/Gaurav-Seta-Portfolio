@@ -8,7 +8,11 @@ app.use( express.static(path.join(__dirname)));
 
 app.get('/',function(req,res){
 
-	res.sendFile(path.join(__dirname+'/index.html'));
+	res.sendFile(path.join(__dirname+'/views/index.html'));
 
+});
+
+app.get('/work',function(req,res){
+	res.sendFile(path.join(__dirname+'/views/workscreen.html'));
 });
 app.listen(process.env.PORT||8080);

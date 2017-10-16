@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Gaurav Seta</title>
+	<link href="styles/work-page.css" rel="stylesheet">
+	<style>
+		
+	</style>
+    <script src="../node_modules/angular/angular.min.js"></script>
+
+  </head>
+  	<body ng-app="mainApp" ng-controller="MainController">
+
+	<div class="profile-container">
+		<div class="left-section">
+			<div class="image-container">
+				<img class="profile-image" src="../images/gaurav.jpg"></img>
+			</div>
+			<div class="profile-box">
+				<h1>GAURAV</h1><h1>SETA</h1>
+			</div>
+			<div class="horizontal-divider"></div>
+			<div class="developer-title"><h3>Front End</h3><h3>Developer</h3>
+			</div>
+			<div class="project-list">
+				<div class="container blue-left-border">
+				 	<div class="image">Angular Projects</div>
+	  					<div class="overlay blue-background">
+	    					<div class="text">Angular Projects</div>
+	  				</div>
+				 </div>
+				<div class="container red-left-border">
+				 	<div class="image">Bootstrap Projects</div>
+	  					<div class="overlay red-background">
+	    					<div class="text">Bootstrap Projects</div>
+	  				</div>
+				 </div>
+				<div class="container green-left-border">
+				 	<div class="image">Angular Material Projects</div>
+	  					<div class="overlay green-background">
+	    					<div class="text">Angular Material Projects</div>
+	  				</div>
+				 </div>
+				<div class="container orange-left-border">
+				 	<div class="image">Animations Projects</div>
+	  					<div class="overlay orange-background">
+	    					<div class="text">Animations Projects</div>
+	  				</div>
+				 </div>
+			</div>
+		</div>
+		<div class="right-section">
+
+			
+		</div>
+		
+	</div>
+
+	<script>
+		angular.module('mainApp',[])
+		.controller('MainController',['$scope',function($scope){
+			$scope.heading="Gaurav Seta";
+
+		}]);
+	</script>
+  	</body>
+</html>
