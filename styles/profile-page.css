@@ -119,6 +119,7 @@
 		text-decoration:none;
 		color:#34485E;
 		flex-basis: 100%;
+		white-space:nowrap;
 	}
 
 	.profile-content {
