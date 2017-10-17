@@ -1,5 +1,6 @@
 angular.module('mainApp',['ui.router'])
 	.config(function($stateProvider,$urlRouterProvider){
+		$urlRouterProvider.when('/tech2', '/tech1');
 		$urlRouterProvider.otherwise('/tech1');
 
 		$stateProvider
