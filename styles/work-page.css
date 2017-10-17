@@ -29,6 +29,7 @@
 		flex-basis: 100%;
     		max-width: 250px;
 		color:white;
+		overflow-y: scroll;
 	}
 	
 	.right-section {
@@ -38,6 +39,7 @@
 		flex-basis:100%;
 		overflow-x: auto;
 		overflow-y:auto;
+		min-height: 200px;
 	}
 
 	.container {
@@ -61,7 +63,7 @@
 		  height: 100%;
 		  width: 100%;
 		  opacity: 0;
-		  transition: 2s ease;
+		  transition: 1s ease;
 		  
 		}
 
@@ -69,29 +71,52 @@
 		  opacity:1;
 		}
 
-		.blue-left-border {
+		.tech1-left-border {
 		 border-left:10px solid #008CBA;
 		}
-		.red-left-border {
+		.tech2-left-border {
 		 border-left:10px solid rgb(244,67,54);
 		}
-		.green-left-border {
+		.tech3-left-border {
 		 border-left:10px solid rgb(76,175,80);
 		}
-		.orange-left-border {
+		.tech4-left-border {
 		 border-left:10px solid rgb(255,87,34);
 		}
 	
-		.blue-background {
+		.tech1-background {
 		 background-color: #008CBA;
 		}
-		.red-background {
+		.tech2-background {
 		 background-color: rgb(244,67,54);
 		}
-		.green-background {
+		.tech3-background {
 		 background-color: rgb(76,175,80);
 		}
-		.orange-background {
+		.tech4-background {
+		 background-color: rgb(255,87,34);
+		}
+
+		.tech-container {
+		 flex:1;
+		 display: flex;
+    		 flex-direction: column;
+    		 justify-content: center;
+    		 align-items: center;
+		}
+
+		.tech2-container {
+		 flex:1;
+		 background-color: rgb(244,67,54);
+		}
+
+		.tech3-container {
+		 flex:1;
+		 background-color: rgb(76,175,80);
+		}
+
+		.tech4-container {
+		 flex:1;
 		 background-color: rgb(255,87,34);
 		}
 		
@@ -145,7 +170,14 @@
 		}
 
 	
-
+		.coming-soon-text {
+		    justify-content:center;
+		    align-items:center;
+		    color:white;
+		    font-weight:bold;
+		    font-size: -webkit-xxx-large;
+		    
+		}
 
 	@media only screen and (min-width:620px){
 		.left-section {
@@ -154,7 +186,7 @@
 		
 		.right-section {
 			flex:1 0px;
-			margin-left: 5px;
+			
 		}
 		.menu-bar a {
 			flex-basis: 0%;

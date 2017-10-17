@@ -11,7 +11,14 @@
 		
 	</style>
     <script src="../node_modules/angular/angular.min.js"></script>
-
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    
+    <script src="../js/workscreen/app.js"></script>
+    <script src="../js/workscreen/controllers/Tech1Controller.js"></script>
+    <script src="../js/workscreen/controllers/Tech2Controller.js"></script>
+    <script src="../js/workscreen/controllers/Tech3Controller.js"></script>
+    <script src="../js/workscreen/controllers/Tech4Controller.js"></script>
+    
   </head>
   	<body ng-app="mainApp" ng-controller="MainController">
 
@@ -27,45 +34,39 @@
 			<div class="developer-title"><h3>Front End</h3><h3>Developer</h3>
 			</div>
 			<div class="project-list">
-				<div class="container blue-left-border">
+				<div ng-class="{'container':true,'tech1-left-border':true,'tech1-background':selectedTech=='tech1'}" ng-click="goTo('tech1')">
 				 	<div class="image">Angular Projects</div>
-	  					<div class="overlay blue-background">
+	  					<div class="overlay tech1-background">
 	    					<div class="text">Angular Projects</div>
 	  				</div>
 				 </div>
-				<div class="container red-left-border">
+				<div ng-class="{'container':true,'tech2-left-border':true,'tech2-background':selectedTech=='tech2'}" ng-click="goTo('tech2')">
 				 	<div class="image">Bootstrap Projects</div>
-	  					<div class="overlay red-background">
+	  					<div class="overlay tech2-background">
 	    					<div class="text">Bootstrap Projects</div>
 	  				</div>
 				 </div>
-				<div class="container green-left-border">
+				<div ng-class="{'container':true,'tech3-left-border':true,'tech3-background':selectedTech=='tech3'}" ng-click="goTo('tech3')">
 				 	<div class="image">Angular Material Projects</div>
-	  					<div class="overlay green-background">
+	  					<div class="overlay tech3-background">
 	    					<div class="text">Angular Material Projects</div>
 	  				</div>
 				 </div>
-				<div class="container orange-left-border">
+				<div ng-class="{'container':true,'tech4-left-border':true,'tech4-background':selectedTech=='tech4'}" ng-click="goTo('tech4')">
 				 	<div class="image">Animations Projects</div>
-	  					<div class="overlay orange-background">
+	  					<div class="overlay tech4-background">
 	    					<div class="text">Animations Projects</div>
 	  				</div>
 				 </div>
 			</div>
 		</div>
 		<div class="right-section">
-
+			<div ui-view style="flex:1;display:flex;flex-direction:column"></div>
+			
 			
 		</div>
 		
 	</div>
 
-	<script>
-		angular.module('mainApp',[])
-		.controller('MainController',['$scope',function($scope){
-			$scope.heading="Gaurav Seta";
-
-		}]);
-	</script>
   	</body>
 </html>
