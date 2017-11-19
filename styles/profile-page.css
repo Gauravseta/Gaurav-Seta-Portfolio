@@ -198,6 +198,12 @@
 		border-top-right-radius:6px;
 		border-bottom-right-radius:6px;
 	}
+	
+	.here-text {
+		text-decoration:underline;
+		font-weight:bold;
+		cursor:pointer
+	}
 
 
 	@media only screen and (min-width:620px){
