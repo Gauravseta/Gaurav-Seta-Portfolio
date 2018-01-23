@@ -205,6 +205,24 @@
 		cursor:pointer
 	}
 
+	.fa {
+		  padding: 10px;
+		  font-size: 26px;
+		  width: 45px;
+		  height:45px;
+		  margin:12px;
+		  box-sizing:border-box;
+		  text-align: center;
+		  text-decoration: none;
+		  
+		  border-radius: 50%;
+	}
+
+	.fa-linkedin {
+		  background: rgb(235,240,241);
+    		  color: rgb(0,168,136);
+	}
+
 
 	@media only screen and (min-width:620px){
 		.left-section {
